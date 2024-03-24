@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Simple Calculator</string>
+    <string name="result_string">Result : %d</string>
+</resources>
