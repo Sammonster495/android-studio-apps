@@ -2,7 +2,6 @@ package com.example.simplecalculator;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -23,21 +22,21 @@ public class MainActivity extends AppCompatActivity {
     public void Add(View view){
         int n1 = Integer.parseInt(operand1.getText().toString());
         int n2 = Integer.parseInt(operand2.getText().toString());
-        result.setText(getString(R.string.result_string, (n1+n2)));
+        result.setText("Result : "+(n1+n2));
     }
     public void Subtract(View view){
         int n1 = Integer.parseInt(operand1.getText().toString());
         int n2 = Integer.parseInt(operand2.getText().toString());
-        result.setText(getString(R.string.result_string, (n1-n2)));
+        result.setText("Result : "+(n1-n2));
     }
     public void Multiply(View view){
         int n1 = Integer.parseInt(operand1.getText().toString());
         int n2 = Integer.parseInt(operand2.getText().toString());
-        result.setText(getString(R.string.result_string, (n1*n2)));
+        result.setText("Result : "+(n1*n2));
     }
     public void Divide(View view){
         int n1 = Integer.parseInt(operand1.getText().toString());
         int n2 = Integer.parseInt(operand2.getText().toString());
-        result.setText(getString(R.string.result_string, (n1/n2)));
+        result.setText("Result : "+(n1/n2));
     }
 }
