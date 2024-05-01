@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     CheckBox pizza, burger, momos, tacos;
-    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pizza = (CheckBox) findViewById(R.id.checkBox1);
-        burger = (CheckBox) findViewById(R.id.checkBox2);
+        tacos = (CheckBox) findViewById(R.id.checkBox2);
         momos = (CheckBox) findViewById(R.id.checkBox3);
-        tacos = (CheckBox) findViewById(R.id.checkBox4);
+        burger = (CheckBox) findViewById(R.id.checkBox4);
     }
 
     public void onClick(View view){
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         if (tacos.isChecked())
             result.append("Tacos ");
         if (pizza.isChecked() || burger.isChecked() || momos.isChecked() || tacos.isChecked())
-            Toast.makeText(this, result.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, result.toString(), Toast.LENGTH_SHORT).show();
         if (!pizza.isChecked() && !burger.isChecked() && !momos.isChecked() && !tacos.isChecked())
             Toast.makeText(this, "No items selected", Toast.LENGTH_SHORT).show();
     }
