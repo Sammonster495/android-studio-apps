@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("sms_to:" + phoneNumber));
+        intent.setData(Uri.parse("smsto:" + phoneNumber));
         intent.putExtra("sms_body", message);
 
         try {
