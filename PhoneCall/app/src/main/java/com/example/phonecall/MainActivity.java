@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent =new Intent(Intent.ACTION_DIAL, Uri.parse("Tel:"+phoneNumber));
+        Intent intent =new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneNumber));
         try {
             startActivity(intent);
         }catch (Exception e){
